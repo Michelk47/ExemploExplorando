@@ -1,7 +1,11 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-new ExemploExcecao().Metodo1();
+int numero = 15;
+bool ehPar = false;
+
+ehPar = numero % 2 == 0;
+Console.WriteLine($" O número {numero} é " + (ehPar ? "par": "impar"));
 
 
 
@@ -9,6 +13,38 @@ new ExemploExcecao().Metodo1();
 
 
 
+// usando um descontrutor onde você desfaz uma varivel que já está no construtor 
+//Pessoa p1 = new Pessoa("Michel", "Alcantara");
+
+//(string nome, string sobrenome) = p1;
+
+//Console.WriteLine($"{nome} {sobrenome}");
+
+
+
+
+
+
+//criando um class que retorna um tuplas trazendo 3 informações true, as linhas do arquivo e a quantidade de linhas
+//LeituraArquivo arquivos = new LeituraArquivo();
+
+//desta forma aqui eu estou descartando a variavel quantidadeLinhas quando você não vai usar uma variavel você pode usar desse jeito
+//(sucesso, linhasArquivo, _)
+//var (sucesso, linhasArquivo, quantidadeLinhas) = arquivos.LerArquivo("C:/Users/michel.alcantara/Desktop/ExemploExplorandoC#/ExemploExplorando/ExemploExplorando/Arquivos/arquivoLeitura.txt");
+
+//if (sucesso)
+//{
+//    Console.WriteLine($"Quantidade de linhas do arquivo: {quantidadeLinhas}");
+
+//    foreach(string linhas in linhasArquivo)
+//    {
+//        Console.WriteLine(linhas);
+//    }
+//}
+//else
+//{
+//    Console.WriteLine("Não foi possivel ler o arquivo");
+//}
 
 
 
@@ -16,10 +52,115 @@ new ExemploExcecao().Metodo1();
 
 
 
+//================= tuplas ========================
+//varias formas de declarar um tupla mais a mais recomenda é está abaixo porque com ela você consegui nomear seus dados já os outros abaixo nem com o nome item1, item2 e assim por diante.
+//(int Id,  string Nome, string Sobrenome, decimal Altura) tupla = (1, "Michel", "Alcantara", 1.85M);
+
+//ValueTuple<int, string, string, decimal> outroexemploTupla = (1, "Michel", "Alcantara", 1.85M);
+//var outroExemploTuplaCreate = Tuple.Create(1, "Michel", "Alcantara", 1.85M);
+
+//Console.WriteLine($"Id: {tupla.Id}");
+//Console.WriteLine($"Nome: {tupla.Nome}");
+//Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
+//Console.WriteLine($"Altura: {tupla.Altura}");
+//================= tuplas ========================
+
+
+
+//declarando o Dictionary
+//Dictionary<string, string> estado = new Dictionary<string, string>();
+
+//inserindo o valor no dictionary
+//estado.Add("SP", "São Paulo");
+//estado.Add("BA", "Bahia");
+//estado.Add("MG", "Minas Gerais");
+
+// mostrando um valor unico usando key do dictionary
+//Console.WriteLine(estado["MG"]);
+//foreach(var item in estado)
+//{
+//    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+//}
+
+// removendo dictionary
+//estado.Remove("BA");
+//Console.WriteLine("\n\n");
+
+//alterando o valor do dictionary
+//estado["SP"] = "São Paulo - valor alterado";
+
+//foreach (var item in estado)
+//{
+//    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+//}
+
+//string chave = "PR";
+//Console.WriteLine($"Verifecando o elemento {chave}");
+
+// validando se existe essa Key no dictionary com a função ContainsKey() que retorna se existe a Key passada no dictinary ou não
+//if (estado.ContainsKey(chave))
+//{
+//    Console.WriteLine($"Valor existente: {chave}");
+//}
+//else
+//{
+//    Console.WriteLine($"Valor não existe. é seguro adicionar a chave {chave}");
+//}
+
+
+//-----------------------------------------------------------------------
+
+//declarando a pilha no c#
+//Stack<int> pilha = new Stack<int>();
+//inserir na pilha com o Push();
+//pilha.Push(4);
+//pilha.Push(6);
+//pilha.Push(8);
+//pilha.Push(10);
+
+//foreach (int item in pilha)
+//{
+//    Console.WriteLine(item);
+//}
+
+// removendo item da pilha com Pop();
+//Console.WriteLine($"Removendo elemento topo: {pilha.Pop()}");
+//pilha.Push(20);
+//foreach (int item in pilha)
+//{
+//    Console.WriteLine(item);
+//}
 
 
 
 
+//===========declarando uma fila no c#==========
+//Queue<int> fila = new Queue<int>();
+
+////inserindo valor na fila com o Enqueue();
+//fila.Enqueue(2);
+//fila.Enqueue(4);
+//fila.Enqueue(6);
+//fila.Enqueue(8);
+
+//foreach(int item in fila)
+//{
+//    Console.Write($"\n{item}");
+//}
+
+// removendo um elemento da fila com o Dequeue();
+//Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+
+//foreach (int item in fila)
+//{
+//    Console.Write($"\n{item}");
+//}
+
+
+//----------------------------------------------
+
+
+//new ExemploExcecao().Metodo1();
 
 
 //try
