@@ -1,15 +1,57 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
-
-int numero = 15;
-bool ehPar = false;
-
-ehPar = numero % 2 == 0;
-Console.WriteLine($" O número {numero} é " + (ehPar ? "par": "impar"));
+using Newtonsoft.Json;
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=============== SEREALIZANDO OS DADOS PARA JSON ===================//
+//DateTime dataAtual = DateTime.Now;
+
+//List<Venda> listaVendas = new List<Venda>();
+
+//Venda v1 = new Venda(1, "Material de estritório", 25.00M, dataAtual);
+//Venda v2 = new Venda(2, "Licença de Sofware", 110.00M, dataAtual);
+
+//listaVendas.Add(v1);
+//listaVendas.Add(v2);
+
+//string seriealizado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+//File.WriteAllText("C:/Users/michel.alcantara/Desktop/ExemploExplorandoC#/ExemploExplorando/ExemploExplorando/Arquivos/vendas.json", seriealizado);
+
+
+//Console.WriteLine(seriealizado);
+
+//===================================================================//
+
+
+
+
+//int numero = 15;
+//bool ehPar = false;
+
+//ehPar = numero % 2 == 0;
+//Console.WriteLine($" O número {numero} é " + (ehPar ? "par": "impar"));
 
 
 
