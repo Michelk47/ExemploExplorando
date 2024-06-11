@@ -3,8 +3,17 @@ using System.Globalization;
 using Newtonsoft.Json;
 
 
+// lendo um arquivo json e rodando ele na tela com todas as informações do arquivo
+string conteudoArquivo = File.ReadAllText("C:/Users/michel.alcantara/Desktop/ExemploExplorandoC#/ExemploExplorando/ExemploExplorando/Arquivos/vendas.json");
+
+List<VendaDeserializando> listaVenda = JsonConvert.DeserializeObject<List<VendaDeserializando>>(conteudoArquivo);
 
 
+foreach (VendaDeserializando venda in listaVenda)
+{
+    Console.WriteLine("\n");
+    Console.WriteLine($"Id: {venda.Id} \n Produto: {venda.Produto} \n Preço: {venda.Preco} \n Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+}
 
 
 
