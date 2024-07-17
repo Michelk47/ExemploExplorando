@@ -3,29 +3,26 @@ using System.Globalization;
 using Newtonsoft.Json;
 
 
+Pessoa2 p2 = new Pessoa2();
+
+p2.Nome = "Michel";
+p2.Idade = 26;
+
+p2.Apresentar();
+
+
+
 // lendo um arquivo json e rodando ele na tela com todas as informações do arquivo
-string conteudoArquivo = File.ReadAllText("C:/Users/michel.alcantara/Desktop/ExemploExplorandoC#/ExemploExplorando/ExemploExplorando/Arquivos/vendas.json");
+//string conteudoArquivo = File.ReadAllText("M:/Curso_C#/ExemploExplorando/Arquivos/vendas.json");
 
-List<VendaDeserializando> listaVenda = JsonConvert.DeserializeObject<List<VendaDeserializando>>(conteudoArquivo);
-
-
-foreach (VendaDeserializando venda in listaVenda)
-{
-    Console.WriteLine("\n");
-    Console.WriteLine($"Id: {venda.Id} \n Produto: {venda.Produto} \n Preço: {venda.Preco} \n Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
-}
+//List<VendaDeserializando> listaVenda = JsonConvert.DeserializeObject<List<VendaDeserializando>>(conteudoArquivo);
 
 
-
-
-
-
-
-
-
-
-
-
+//foreach (VendaDeserializando venda in listaVenda)
+//{
+//    Console.WriteLine("\n");
+//    Console.WriteLine($"Id: {venda.Id} \n Produto: {venda.Produto} \n Preço: {venda.Preco} \n Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+//}
 
 
 
@@ -46,7 +43,7 @@ foreach (VendaDeserializando venda in listaVenda)
 
 //string seriealizado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
 
-//File.WriteAllText("C:/Users/michel.alcantara/Desktop/ExemploExplorandoC#/ExemploExplorando/ExemploExplorando/Arquivos/vendas.json", seriealizado);
+//File.WriteAllText("M:/Curso_C#/ExemploExplorando/Arquivos/vendas.json", seriealizado);
 
 
 //Console.WriteLine(seriealizado);

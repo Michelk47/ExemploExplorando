@@ -1,14 +1,14 @@
 [
   {
     "Id": 1,
-    "Nome_Produto": "Material de estritório",
+    "Produto": "Material de estritório",
     "Preco": 25.00,
-    "DataVenda": "2024-06-07T17:10:52.9283235-03:00"
+    "DataVenda": "2024-07-16T20:49:21.0604888-03:00"
   },
   {
     "Id": 2,
-    "Nome_Produto": "Licença de Sofware",
+    "Produto": "Licença de Sofware",
     "Preco": 110.00,
-    "DataVenda": "2024-06-07T17:10:52.9283235-03:00"
+    "DataVenda": "2024-07-16T20:49:21.0604888-03:00"
   }
 ]
