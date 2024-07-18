@@ -3,14 +3,36 @@ using System.Globalization;
 using Newtonsoft.Json;
 
 
-Pessoa2 p2 = new Pessoa2();
+//=========================== Como usar Convert e Parse ====================================================//
+// o Convert e Parse fazem a conversão de tipo porem a diferença dos dois é que no Convert se ele receber
+// null ele retorna 0 e não da erro na compilação já o Parse assim que recebe um valor null ele acaba dando erro
+int a = Convert.ToInt32(null);
+//int b = int.Parse("6c");
 
-p2.Nome = "Michel";
-p2.Idade = 26;
+Console.WriteLine(a);
+//Console.WriteLine(b);
 
-p2.Apresentar();
+//============================================================================================================//
 
 
+
+
+
+//========= como declarar a datetime ===============//
+
+//DateTime dataAtual = DateTime.Now;
+//Console.WriteLine(dataAtual.ToString("dd/MM/yyyy"));
+
+//===================================================//
+
+//Pessoa2 p2 = new Pessoa2();
+
+//p2.Nome = "Michel";
+//p2.Idade = 26;
+
+//p2.Apresentar();
+
+//========================================================== teste 2 =============================//
 
 // lendo um arquivo json e rodando ele na tela com todas as informações do arquivo
 //string conteudoArquivo = File.ReadAllText("M:/Curso_C#/ExemploExplorando/Arquivos/vendas.json");
