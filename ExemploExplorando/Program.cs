@@ -1,15 +1,57 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 using Newtonsoft.Json;
+using System;
+
+
+//================== estrutura de repetição (FOR, WHILE, Do WHILE) =================//
+//int num = 0;
+//int i = 0;
+
+//do 
+//{
+//    Console.WriteLine("Digite ) para parar de rodar");
+//    num =Convert.ToInt32(Console.ReadLine());
+//    i += num;
+//    Console.WriteLine(i);
+//} 
+//while (num != 0);
+
+//while (i <= 10)
+//{
+//    Console.WriteLine($"{num} x {i} = {num * i}");
+//    i++;
+//}
+
+//for (int i = 1; i <= 10; i++)
+//{
+//    Console.WriteLine($"{num} x {i} = {num * i}");
+//}
+
+//============================================================================================================//
+
+
+//=========== TryParse============================//
+// é uma forma mais segura de converter o tipo da variavel nessa caso da variavel a e b como a variavel a tem - ele não vai quebrar o codigo ele vai
+// retornar 0 informando que não foi possivel converteer esse valor com isso você consegui validar o processo
+//string a = "15-";
+
+//int b = 0;
+
+//int.TryParse(a, out b);
+
+//Console.WriteLine(b);
+//============================================================================================================//
+
 
 
 //=========================== Como usar Convert e Parse ====================================================//
 // o Convert e Parse fazem a conversão de tipo porem a diferença dos dois é que no Convert se ele receber
 // null ele retorna 0 e não da erro na compilação já o Parse assim que recebe um valor null ele acaba dando erro
-int a = Convert.ToInt32(null);
+//int a = Convert.ToInt32(null);
 //int b = int.Parse("6c");
 
-Console.WriteLine(a);
+//Console.WriteLine(a);
 //Console.WriteLine(b);
 
 //============================================================================================================//
