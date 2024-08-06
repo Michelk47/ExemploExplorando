@@ -3,23 +3,47 @@ using System.Globalization;
 using Newtonsoft.Json;
 using System;
 
-int[] arrayInteiros = new int[3];
+//========aprendendo comom mexer com lista=========//
+List<string> listaString = new List<string>();
 
-arrayInteiros[0] = 72;
-arrayInteiros[1] = 64;
-arrayInteiros[2] = 60;
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+
+Console.WriteLine($"minha lista {listaString} quantidade {listaString.Count} capacidade {listaString.Capacity} ");
+
+foreach (string str in listaString)
+{
+    Console.WriteLine($"Itens da minha lista {str}");
+}
+
+listaString.Remove("BA");
+
+foreach (string str in listaString)
+{
+    Console.WriteLine($"Itens da minha lista {str}");
+}
+
+//=======================================================//
+
+
+//int[] arrayInteiros = new int[3];
+
+//arrayInteiros[0] = 72;
+//arrayInteiros[1] = 64;
+//arrayInteiros[2] = 60;
 
 //========== Array.Resize e uma maneira para você aumentar o tamanho do seu array que já estava rodando ===========//
 //Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
 
-int[] arrayDobrado = new int[arrayInteiros.Length * 2];
+//int[] arrayDobrado = new int[arrayInteiros.Length * 2];
 //Array.Copy e uma função que copia o valor de outro array para o novo que você esta criando
-Array.Copy(arrayInteiros, arrayDobrado, arrayInteiros.Length);
+//Array.Copy(arrayInteiros, arrayDobrado, arrayInteiros.Length);
 
-for (int i = 0; i < arrayDobrado.Length; i++)
-{
-    Console.WriteLine(arrayDobrado[i]);
-}
+//for (int i = 0; i < arrayDobrado.Length; i++)
+//{
+//    Console.WriteLine(arrayDobrado[i]);
+//}
 
 //foreach (int inteiro in arrayInteiros)
 //{
